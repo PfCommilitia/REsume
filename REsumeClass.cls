@@ -11,34 +11,36 @@
 \RequirePackage{REsumeFont}
 
 \RequirePackage[
-	a4paper,
-	left=0.7in,
-	right=0.7in,
-	top=0.50in,
-	bottom=0.5in,
-	nohead
+  a4paper,
+  left=0.7in,
+  right=0.7in,
+  top=0.50in,
+  bottom=0.5in,
+  nohead
 ]{geometry}
 
 \RequirePackage{titlesec}
 \RequirePackage{enumitem}
-\setlist{noitemsep} % removes spacing from items but leaves space around the whole list
+\setlist{noitemsep} % removes spacing from items but leaves space
+% around the whole list
 %\setlist{nosep} % removes all vertical spacing within and around the list
 \setlist[itemize]{topsep=0.25em, leftmargin=1.5pc}
 \setlist[enumerate]{topsep=0.25em, leftmargin=1.5pc}
 \RequirePackage[super]{nth}
 
-\titleformat{\section}         % Customise the \section command 
-  {\Large\bfseries\raggedright} % Make the \section headers large (\Large),
-                               % small capitals (\scshape) and left aligned (\raggedright)
-  {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
-  {}                           % Can be used to insert code before the heading
-  [\titlerule]                 % Inserts a horizontal line after the heading
+\titleformat{\section}         % Customise the \section command
+{\Large\bfseries\raggedright} % Make the \section headers large (\Large),
+% small capitals (\scshape) and left aligned (\raggedright)
+{}{0em}                      % Can be used to give a prefix to all
+% sections, like 'Section ...'
+{}                           % Can be used to insert code before the heading
+[\titlerule]                 % Inserts a horizontal line after the heading
 \titlespacing*{\section}{0cm}{*1}{*1}
 
 \titleformat{\subsection}
-  {\large\raggedright}
-  {}{0em}
-  {}
+{\large\raggedright}
+{}{0em}
+{}
 \titlespacing*{\subsection}{0cm}{*1}{*0.5}
 
 \newcommand{\datedsection}[2]{%
@@ -59,11 +61,11 @@
 \newcommand{\contactInfo}[4]{
   \centerline{\large{\ {#1} \textperiodcentered\ \ {#2}}
     \ifthenelse{\isempty{#3}}%
-      { } % if {#3} is empty
-      {\textperiodcentered\ \ {#3} } % homepage, no space before \text...
+    { } % if {#3} is empty
+    {\textperiodcentered\ \ {#3} } % homepage, no space before \text...
     \ifthenelse{\isempty{#4}}%
-      { } % if {#3} is empty
-      {\textperiodcentered\ \ {#4} }
+    { } % if {#3} is empty
+    {\textperiodcentered\ \ {#4} }
   }
   \vspace{0.7ex}
 }
