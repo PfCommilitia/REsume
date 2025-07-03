@@ -1,0 +1,50 @@
+\ProvidesPackage{REsumeFont}
+
+\RequirePackage{fontspec}
+\RequirePackage[AutoFallBack, AutoFakeSlant, AutoFakeBold]{xeCJK}
+\RequirePackage[math-style=ISO, bold-style=ISO, mathrm=sym]{unicode-math}
+
+\setmainfont{EB Garamond}[
+  FallBack = {FZShuSong-Z01},
+  FallBack = {Source Han Serif SC},
+  FallBack = {Symbols Nerd Font}
+]
+
+\setsansfont{Open Sans}[
+  FallBack = {FZHei-B01},
+  FallBack = {Sarasa Gothic SC},
+  FallBack = {Symbols Nerd Font}
+]
+
+\setmonofont{Maple Mono}[
+  FallBack = {FZHei-B01},
+  FallBack = {Sarasa Gothic SC},
+  FallBack = {Symbols Nerd Font Mono}
+]
+
+\setmathfont{STIX Two Math}[
+  FallBack={FZShuSong-Z01},
+  FallBack={Source Han Serif SC},
+  FallBack={Symbols Nerd Font}
+]
+
+\setCJKmainfont{EB Garamond}
+\setCJKfallbackfamilyfont{\CJKrmdefault}[ItalicFont={FZKai-Z03}]{
+  [BoldFont={FZHei-B01}] {FZShuSong-Z01},
+  [BoldFont={Sarasa Gothic SC}] {Source Han Serif SC},
+  [] {Symbols Nerd Font}
+}
+
+\setCJKsansfont{Open Sans}
+\setCJKfallbackfamilyfont{\CJKsfdefault}[]{
+  [] {FZHei-B01},
+  [] {Sarasa Gothic SC},
+  [] {Symbols Nerd Font}
+}
+
+\setCJKmonofont{Maple Mono}
+\setCJKfallbackfamilyfont{\CJKttdefault}[]{
+  [] {FZHei-B01},
+  [] {Sarasa Gothic SC},
+  [] {Symbols Nerd Font Mono}
+}
